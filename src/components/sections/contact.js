@@ -1,7 +1,6 @@
 import React, { useRef } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import Img from "gatsby-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { motion } from "framer-motion"
 
@@ -81,10 +80,6 @@ const Contact = ({ content }) => {
         <h3>{frontmatter.title}</h3>
         <MDXRenderer>{body}</MDXRenderer>
         <div className="profile">
-          <Img
-            className="avatar"
-            fluid={frontmatter.profileImage.childImageSharp.fluid}
-          />
           <div className="details">
             <strong>{frontmatter.name}</strong>
             <br />

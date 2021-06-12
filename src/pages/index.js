@@ -6,7 +6,6 @@ import GlobalStateProvider from "../context/provider"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/sections/hero"
-import Articles from "../components/sections/articles"
 import About from "../components/sections/about"
 import Interests from "../components/sections/interests"
 import Projects from "../components/sections/projects"
@@ -36,8 +35,6 @@ const IndexPage = ({ data }) => {
           }
         />
         <Hero content={data.hero.edges} />
-        {/* Articles is populated via Medium RSS Feed fetch */}
-        <Articles />
         <About content={data.about.edges} />
         <Interests content={data.interests.edges} />
         <Projects content={data.projects.edges} />
@@ -92,13 +89,6 @@ export const pageQuery = graphql`
           body
           frontmatter {
             title
-            image {
-              childImageSharp {
-                fluid(maxWidth: 400, quality: 90) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           }
         }
       }
@@ -112,13 +102,6 @@ export const pageQuery = graphql`
             shownItems
             interests {
               name
-              icon {
-                childImageSharp {
-                  fixed(width: 20, height: 20, quality: 90) {
-                    ...GatsbyImageSharpFixed
-                  }
-                }
-              }
             }
           }
           frontmatter {
@@ -143,13 +126,6 @@ export const pageQuery = graphql`
             emoji
             external
             github
-            screenshot {
-              childImageSharp {
-                fluid(maxWidth: 400, quality: 90) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
             tags
             position
             buttonVisible
@@ -169,16 +145,20 @@ export const pageQuery = graphql`
             title
             name
             email
-            profileImage {
-              childImageSharp {
-                fluid(maxWidth: 400, quality: 90) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           }
         }
       }
     }
   }
 `
+
+/**
+ * GQL Queries Extra
+ * icon {
+                childImageSharp {
+                  fixed(width: 20, height: 20, quality: 90) {
+                    ...GatsbyImageSharpFixed
+                  }
+                }
+              }
+ */

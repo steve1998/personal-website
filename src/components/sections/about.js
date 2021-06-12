@@ -1,7 +1,6 @@
 import React, { useRef, useContext, useEffect } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import Img from "gatsby-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { motion, useAnimation } from "framer-motion"
 
@@ -97,17 +96,6 @@ const About = ({ content }) => {
           <div className="text-content">
             <MDXRenderer>{body}</MDXRenderer>
           </div>
-        </motion.div>
-        <motion.div
-          className="image-content"
-          ref={iRef}
-          initial={{ opacity: 0, x: 20 }}
-          animate={iControls}
-        >
-          <Img
-            className="about-author"
-            fluid={frontmatter.image.childImageSharp.fluid}
-          />
         </motion.div>
       </StyledContentWrapper>
     </StyledSection>
