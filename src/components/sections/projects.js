@@ -131,7 +131,6 @@ const StyledProject = styled(motion.div)`
   }
   .details {
     width: 100%;
-    max-width: 25rem;
     display: flex;
     flex-direction: column;
     margin-top: 3rem;

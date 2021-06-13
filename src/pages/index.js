@@ -124,8 +124,6 @@ export const pageQuery = graphql`
             title
             category
             emoji
-            external
-            github
             tags
             position
             buttonVisible
