@@ -1,13 +1,12 @@
 module.exports = {
   //-- SITE SETTINGS -----
-  author: "@konstantinmuenster",
-  siteTitle: "Gatsby Starter Portfolio Minimal",
-  siteShortTitle: "Gatsby", // Used as logo text in header, footer, and splash screen
-  siteDescription:
-    "A modern one-page portfolio with a clean yet expressive design.",
-  siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
+  author: "@steve1998",
+  siteTitle: "Nicholas's Personal Website",
+  siteShortTitle: "nd.", // Used as logo text in header, footer, and splash screen
+  siteDescription: "Nicholas Steven Darmawan's personal website",
+  siteUrl: "https://nicholassteven.netlify.app/",
   siteLanguage: "en_US",
-  siteIcon: "content/favicon.png", // Relative to gatsby-config file
+  siteIcon: "", // Relative to gatsby-config file
   seoTitleSuffix: "Portfolio Minimal", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
   useCookieBar: false, // If you use Google Analytics and want to be GDPR-compliant, set it to true
   googleAnalyticsTrackingId: "", // e.g. UA-XXXXXX-X
@@ -18,6 +17,8 @@ module.exports = {
       primary: "#000000",
       secondary: "#FFF4D9",
       tertiary: "#F2F2F2",
+      quaternary: "#3777FF",
+      quinary: "#FFE9CE",
       text: "#000000",
       subtext: "#555555",
       background: "#FFFFFF",
@@ -93,14 +94,5 @@ module.exports = {
       url: "", // if useFileName=false, you can set an anchor link here and use the button for navigational purposes
     },
   },
-  footerLinks: [
-    {
-      name: "Privacy",
-      url: "/privacy",
-    },
-    {
-      name: "Imprint",
-      url: "/imprint",
-    },
-  ],
+  footerLinks: [],
 }

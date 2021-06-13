@@ -46,18 +46,22 @@ const StyledLink = styled(Link)`
   letter-spacing: 1px;
 `
 
+const StyledText = styled.span`
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: ${({ theme, $darkMode }) =>
+    $darkMode ? theme.colors.primary : theme.colors.background};
+  letter-spacing: 1px;
+`
+
 const Footer = () => {
   const { darkMode } = useContext(Context).state
   return (
     <StyledFooter darkMode={darkMode}>
       <StyledContentWrapper>
         <Link to="/" aria-label="home">
-          <Logo
-            size="1.5rem"
-            color={
-              darkMode ? darkTheme.colors.primary : lightTheme.colors.background
-            }
-          />
+          <StyledText>Made using Gatsby.js</StyledText>
         </Link>
         <div className="footer-links" data-testid="footer-links">
           {footerLinks.map(({ name, url }, key) => (
