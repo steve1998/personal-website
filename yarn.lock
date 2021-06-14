@@ -1172,6 +1172,26 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/fira-sans@^4.4.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/fira-sans/-/fira-sans-4.4.5.tgz#76a535ea4fd4e99f51b76fd54adef3b28355208a"
+  integrity sha512-hHtaZUTHb9pfKor+NCaxFy4uD1kDNxmYiBmV4TBoJIBZcDt46MzpXh2eE/Nlf8I3g4tsTNppcHMJZF8PzrCoxg==
+
+"@fontsource/firago@^4.4.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/firago/-/firago-4.4.5.tgz#edfca75247a8c90a397504e27b3c0742b3dc3c9b"
+  integrity sha512-oIsNIcvl2+EiG1/g6kzQxstgf8MKn7b+3h9exrXKxreRG4BjvSJidAGe/YBk+OiwD5iZB5pN4t6HEE0KOF46Zw==
+
+"@fontsource/open-sans@^4.4.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.4.5.tgz#07b31617e62ed753c94cabcf552ebaed4de497ce"
+  integrity sha512-PDWEvO1/p8OAHHiielvEmwGXHNbZhrZn96ojV7+/mKgFu+cCUcGVJl9sFs97rCWLe3hKQsYLEsJs4EiLjwa+UQ==
+
+"@fontsource/poppins@^4.4.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-4.4.5.tgz#c75dcc453f7a9381de3f9b932366c2457887184c"
+  integrity sha512-pu675yvBGFhAHD8D7uj7C0NaHqDxD7mlgmLM8ziyYL4kYH79fil7rJ6U5X2oaKxoyRk3rxxb9k1fG0CCc7CquA==
+
 "@graphql-tools/batch-execute@^7.1.2":
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/@graphql-tools/batch-execute/-/batch-execute-7.1.2.tgz#35ba09a1e0f80f34f1ce111d23c40f039d4403a0"
