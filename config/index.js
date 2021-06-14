@@ -41,7 +41,7 @@ module.exports = {
     },
   },
   fonts: {
-    primary: "Roboto, Arial, sans-serif",
+    primary: "Poppins, Arial, sans-serif",
   },
 
   //-- ARTICLES SECTION SETTINGS -----
